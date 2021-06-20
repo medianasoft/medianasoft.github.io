@@ -8,7 +8,7 @@ group:
 
 ## Phase III trial with a binary endpoint
 
-The design of adaptive trials with data-driven treatment selection will be illustrated using a case study based on the Phase III trial in infants with proliferating infantile hemangioma (Leaute-Labrze et al., 2015). The trial was conducted to evaluate the efficacy and safety profiles of four propranolol regimens (1 or 3 mg of propranolol base per kilogram of body weight per day for 3 or 6 months) compared to placebo. The primary efficacy evaluation was based on a binary endpoint, namely, the success rate (rate of complete or nearly complete resolution of the target hemangioma) at the end of the 26-week period. An adaptive approach was employed in the trial and the best propranolol regimen was chosen at an interim analysis.
+The design of adaptive trials with data-driven treatment selection will be illustrated using a case study based on the Phase III trial in infants with proliferating infantile hemangioma (Leaute-Labrze et al., 2015). The trial was conducted to evaluate the efficacy and safety profiles of four propranolol regimens (1 or 3 mg of propranolol base per kilogram of body weight per day for 3 or 6 months) compared to placebo. The primary efficacy evaluation was based on a binary endpoint, namely, the success rate (rate of complete or nearly complete resolution of the target hemangioma) at the end of the 6-month period. An adaptive approach was employed in the trial and the best propranolol regimen was chosen at an interim analysis.
 
 In this case study, an extended version of the trial design will be considered. An adaptive design with two interim looks will be assumed: 
 
@@ -37,10 +37,16 @@ parameters = list()
 
 and the arguments of this parameter list will be populated as described below. 
 
-A binary endpoint will be specified in this trial:
+A binary primary endpoint will be specified in this trial:
 
 ``` r
 parameters$endpoint_type = "Binary"
+```
+
+The binary proportion endpoint represents the success rate and a higher values indicates a more favorable outcome. The `direction` parameter needs to be set to "Higher", i.e.,
+
+``` r
+parameters$direction = "Higher"
 ```
 
 A balanced allocation of patients across the five arms (placebo and four regimens) is assumed with 90 enrolled patients in each arm, i.e., 
@@ -49,19 +55,19 @@ A balanced allocation of patients across the five arms (placebo and four regimen
 parameters$sample_size = c(90, 90, 90, 90, 90)
 ```
 
-The magnitude of the treatment effect is specified using the success rate at 26 weeks in the placebo and four regimen arms:
+The magnitude of the treatment effect is specified using the success rate at 6 months in the placebo and four regimen arms:
 
 ``` r
 parameters$control_rate = 0.1
-parameters$treatment_rate = c(0.30, 0.30, 0.30, 0.30)
+parameters$treatment_rate = c(0.30, 0.30, 0.35, 0.35)
 ```
 
 As a starting point, a constant success rate of 30% is assumed for each regimen but, of course, it will be advisable to examine the adaptive design's performance under multiple plausible sets of success rates across the four regimens.
 
-The information fractions at Interim analyses 1 and 2 will be defined in terms of the number of patients who complete the 26-week treatment period. Early interim looks, corresponding to the 30% and 50% information fractions, will be utilized in the trial to reduce the total sample size:
+The information fractions at Interim analyses 1 and 2 will be defined in terms of the number of patients who complete the 6-month treatment period. Early interim looks, corresponding to the 20% and 50% information fractions, will be utilized in the trial to reduce the total sample size:
 
 ``` r
-parameters$info_frac = c(0.3, 0.5, 1)
+parameters$info_frac = c(0.2, 0.5, 1)
 ``` 
 
 The threshold for conditional power at Interim analysis 1 will be set to 30%, i.e.,

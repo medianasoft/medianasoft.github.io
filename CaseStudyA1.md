@@ -21,7 +21,7 @@ For more information on the statistical methodology used in the `ADSSMod` functi
 
 ## Adaptive design with event count re-estimation using `ADSSMod` function
 
-This section introduces key features of the `ADSSMod` function and  illustrates the process of evaluating key operating characteristics of the  adaptive design defined above. The design parameters and treatment effect assumptions presented in this section are based on the corresponding parameters of the QUAZAR AML-001 trial.
+This section introduces key features of the `ADSSMod` function and  illustrates the process of evaluating key operating characteristics of the adaptive design defined above. The design parameters and treatment effect assumptions presented in this section are based on the corresponding parameters of the QUAZAR AML-001 trial.
 
 The first step is to load the MedianaDesigner package:
 
@@ -41,6 +41,12 @@ First of all, the endpoint type needs to be defined:
 
 ``` r
 parameters$endpoint_type = "Time-to-event"
+```
+
+Since a longer survival time is a more favorable outcome in this trial, the `direction` parameter needs to be set to "Higher", i.e.,
+
+``` r
+parameters$direction = "Higher"
 ```
 
 The total number of enrolled patients was assumed to be 460 in the QUAZAR AML-001 trial and a 1:1 randomization ratio was used in the trial. Given this, the sample sizes in the control and treatment arms are specified as follows:

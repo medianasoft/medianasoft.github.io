@@ -37,6 +37,12 @@ The endpoint type needs to be specified first:
 parameters$endpoint_type = "Time-to-event"
 ```
 
+As in [Case study A1](https://medianasoft.github.io/CaseStudyA1), a longer survival time is a more favorable outcome in this trial and therefore the `direction` parameter needs to be set to "Higher", i.e.,
+
+``` r
+parameters$direction = "Higher"
+```
+
 The number of patients to be enrolled in the control and treatment arms as well as the target number of events at the final analysis are specified as follows:
 
 ``` r

@@ -43,6 +43,7 @@ Multiple case studies have been created to help users come up to speed with the 
 The following case studies illustrate the process of designing adaptive trials with data-driven sample size/event count re-estimation using the `ADSSMod` function:
 
 * [Case study A1](https://medianasoft.github.io/CaseStudyA1).
+* [Case study A2](https://medianasoft.github.io/CaseStudyA2).
 
 ## Module B: Adaptive designs with data-driven treatment selection 
 
@@ -50,7 +51,7 @@ The following case studies illustrate the process of designing adaptive trials w
 
 * [Case study B1](https://medianasoft.github.io/CaseStudyB1).
 
-## Module C: Adaptive designs with data-driven treatment selection 
+## Module C: Adaptive designs with data-driven population selection 
 
 The following case studies illustrate the process of designing adaptive trials with data-driven population selection using the `ADPopSel` function:
 
