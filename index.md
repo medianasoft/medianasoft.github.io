@@ -18,7 +18,7 @@ Mediana has been an active contributor to the development of free and open-sourc
 
 This package supports efficient simulation-based power and sample size calculations for a broad class of late-stage clinical trials. 
 
-The latest development version of the package can be found on [Github](https://github.com/medianasoft/MedianaDesigner). The package will be released on CRAN later this year.
+The latest stable version of the package can be downloaded from [CRAN](https://cran.r-project.org/web/packages/MedianaDesigner/index.html) and the latest development version can be found on [Github](https://github.com/medianasoft/MedianaDesigner). 
 
 For more information on this package, visit [Mediana's web site](http://www.mediana.us/free-software) and review the [online manual](https://medianasoft.github.io/MedianaDesigner). 
 

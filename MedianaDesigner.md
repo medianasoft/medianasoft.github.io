@@ -18,7 +18,7 @@ The following modules are currently included in the package:
 
 # Development version
 
-As noted on the main page, the latest development version of the package is available on [Github](https://github.com/medianasoft/MedianaDesigner). This version is easy to install directly from GitHub using the `devtools` package. After installing this package, submit the following code to install the latest version of the MedianaDesigner package on your computer:
+As noted on the main page, the latest stable version of the package can be downloaded from [CRAN](https://cran.r-project.org/web/packages/MedianaDesigner/index.html) and the latest development version is available on [Github](https://github.com/medianasoft/MedianaDesigner). This version is easy to install directly from GitHub using the `devtools` package. After installing this package, submit the following code to install the latest version of the MedianaDesigner package on your computer:
 
 ``` r
 devtools::install_github("medianasoft/MedianaDesigner")
