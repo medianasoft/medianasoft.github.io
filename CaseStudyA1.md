@@ -21,7 +21,7 @@ For more information on the statistical methodology used in the `ADSSMod` functi
 
 ## Adaptive design with event count re-estimation using `ADSSMod` function
 
-This section introduces key features of the `ADSSMod` function and  illustrates the process of evaluating key operating characteristics of the adaptive design defined above. The design parameters and treatment effect assumptions presented in this section are based on the corresponding parameters of the QUAZAR AML-001 trial.
+This section introduces key features of the `ADSSMod` function and illustrates the process of evaluating key operating characteristics of the adaptive design defined above. The design parameters and treatment effect assumptions presented in this section are based on the corresponding parameters of the QUAZAR AML-001 trial.
 
 The first step is to load the MedianaDesigner package:
 
