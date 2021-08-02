@@ -95,7 +95,7 @@ Similarly, the target number of events at the final analysis needs to be set up 
 parameters$event_count = c(700, 300)
 ``` 
 
-If the efficacy data at Interim analysis 2 support the decision to perform the final analysis in the overall population, the trial will continue until 600 events have been accrued in this population. However, if the null hypothesis of no effect in the biomarker-positive subpopulation is chosen, the trial's duration will be determined by the time it takes to accrue 300 events within this subpopulation.
+If the efficacy data at Interim analysis 2 support the decision to perform the final analysis in the overall population, the trial will continue until 700 events have been accrued in this population. However, if the null hypothesis of no effect in the biomarker-positive subpopulation is chosen, the trial's duration will be determined by the time it takes to accrue 300 events within this subpopulation.
 
 The information fractions at Interim analysis 1, Interim analysis 2 and Final analysis are defined as follows:
 
