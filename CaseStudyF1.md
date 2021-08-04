@@ -93,12 +93,17 @@ With any response-adaptive design, it is common to fix the randomization ratio i
 parameters$ratio_placebo = 0.2
 ```
 
-As explained in the technical manual, the class of response-adaptive designs for dose-finding trials implemented in this module relies on a model-averaging approach based on the MCPMod method. This method requires that a set of dose-response functions that describe plausible shapes of the dose-response relationship should be prospectively defined. The current implementation of the method assumes four candidate dose-response models, namely, linear, exponential, Emax and logistic models. The non-linear parameters of these candidate models are specified as follows:
+As explained in the technical manual, the class of response-adaptive designs for dose-finding trials implemented in this module relies on a model-averaging approach based on the MCPMod method. This method requires that a set of dose-response functions that describe plausible shapes of the dose-response relationship should be prospectively defined. The current implementation of the method assumes four candidate dose-response models, namely, linear, exponential, Emax and logistic models. The non-linear parameters of the exponential, Emax and logistic models are specified as follows:
 
 ``` r
+# Non-linear parameter of the exponential model (delta)
 parameters$exponential_model_parameter = 400
-parameters$emax_model_parameter = 400
-parameters$logistic_model_parameters = c(200, 200)
+
+# Non-linear parameter of the Emax model (ED50)
+parameters$emax_model_parameter = 600
+
+# Non-linear parameters of the logistic model (ED50 and delta)
+parameters$logistic_model_parameters = c(400, 50)
 ```
 
 It is important to note that no parameter needs to be specified for the linear model. 
@@ -112,6 +117,12 @@ parameters$delta = -6
 ```
 
 Note that a negative value of the threshold is required in this case since a reduction in the MADRS total score indicates beneficial effect.
+
+The last parameter related to the adaptive randomization procedure is the balance parameter. This parameter controls the degree of balance for patient allocation in the next cohort. If a smaller value is chosen, the patient allocation across the dosing arms is more likely to be balanced and, with a larger value of this parameter, the allocation will be increasingly imbalanced. In this case study, the balance parameter will be set to 2 to assign most of the patients to the most promising doses:
+
+``` r
+parameters$balance = 2
+```
 
 The statistical significance of the dose-response relationship in the response-adaptive design, as well as a traditional design with equal randomization, will be evaluated at a  one-sided alpha of 2.5%, i.e.,
 
