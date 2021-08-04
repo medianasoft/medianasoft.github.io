@@ -93,14 +93,15 @@ With any response-adaptive design, it is common to fix the randomization ratio i
 parameters$ratio_placebo = 0.2
 ```
 
-As explained in the technical manual, the class of response-adaptive designs for dose-finding trials implemented in this module relies on a model-averaging approach based on the MCPMod method. This method requires that a set of dose-response functions that describe plausible shapes of the dose-response relationship should be prospectively defined. The current implementation of the method assumes four candidate dose-response models, namely, linear, exponential, Emax and logistic models. The parameters of these candidate models are specified as follows:
+As explained in the technical manual, the class of response-adaptive designs for dose-finding trials implemented in this module relies on a model-averaging approach based on the MCPMod method. This method requires that a set of dose-response functions that describe plausible shapes of the dose-response relationship should be prospectively defined. The current implementation of the method assumes four candidate dose-response models, namely, linear, exponential, Emax and logistic models. The non-linear parameters of these candidate models are specified as follows:
 
 ``` r
-parameters$linear_model_parameter = 0
 parameters$exponential_model_parameter = 400
 parameters$emax_model_parameter = 400
 parameters$logistic_model_parameters = c(200, 200)
 ```
+
+It is important to note that no parameter needs to be specified for the linear model. 
 
 For more information on the MCPMod methodology and its implementation, see the [MCPModPack package](https://cran.r-project.org/web/packages/MCPModPack/index.html). 
 
