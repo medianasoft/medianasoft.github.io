@@ -8,9 +8,9 @@ group:
 
 ## Dose-finding Phase II trial
 
-A simulation-based approach to designing trials with response-adaptive randomization will be illustrated using a Phase II trial in patients with partially responsive major depressive disorder. This trial will be conducted to study the dose-response profile of a novel treatment. Four doses of this treatment (100 mg/day, 200 mg/day, 400 mg/day and 800 mg/day) will be compared to placebo. The primary efficacy analysis will be performed using a continuous endpoint, i.e., the mean reduction from baseline to 4 weeks in the MADRS (Montgomery-Asberg Depression Rating Scale) total score. 
+A simulation-based approach to designing trials with response-adaptive randomization will be illustrated using a Phase II trial in patients with partially responsive major depressive disorder. This trial will be conducted to study the dose-response profile of a novel treatment. Four doses of this treatment (100 mg/day, 200 mg/day, 400 mg/day and 800 mg/day) will be compared to placebo. The primary efficacy analysis will be performed using a continuous endpoint, i.e., the mean reduction from baseline to 4 weeks in the MADRS (Montgomery-Asberg Depression Rating Scale) total score. The endpoint is normally distributed and, without a treatment, the mean and standard deviation of the change at 4 weeks are expected to be -10 and 14, respectively.
 
-A four-stage design will be employed in this clinical trial with 50 patients enrolled in each stage. Patients in Stage 1 will be equally randomized to the four doses of the experimental treatment or placebo and, starting with Stage 2, a response-adaptive randomization approach will be applied. At the end of each stage the posterior probabilities of achieving target efficacy will be computed in each of the four dosing arms and the randomization scheme for the next stage will be updated appropriately. The randomization ratio in the placebo arm will be fixed at 20%.
+A four-stage design will be employed in this clinical trial with 50 patients enrolled in each stage. Patients in Stage 1 will be equally randomized to the four doses of the experimental treatment or placebo and, starting with Stage 2, a response-adaptive randomization approach will be applied. At the end of each stage the posterior probabilities of achieving target efficacy will be computed in each of the four dosing arms and the randomization scheme for the next stage will be updated appropriately (note that the randomization ratio in the placebo arm will be fixed at 20%). The ultimate goal of the response-adaptive design is to treat more patients at the most effective doses. 
 
 The steps required to perform a simulation-based evaluation of this response-adaptive design using the `ADRand` function are presented below. For more information on the statistical methodology used in this function, download the [technical manual](http://www.mediana.us/MedianaDesigner/ADRand.pdf).
 
@@ -61,7 +61,7 @@ parameters$enrollment_period = 36
 parameters$enrollment_parameter = 24
 ```
 
-The primary efficacy evaluation will be performed at 4 weeks after randomization and thus
+The length of the treatment period in this trial is 4 weeks (the primary efficacy evaluation will be performed at 4 weeks after randomization):
 
 ``` r
 parameters$treatment_period = 4
@@ -116,7 +116,7 @@ After the model-averaging approach has been applied to the dose-response data to
 parameters$delta = -6
 ```
 
-Note that a negative value of the threshold is required in this case since a reduction in the MADRS total score indicates beneficial effect.
+The probability of meeting the target efficacy profile plays a key role in the adaptive randomization procedure. This probability is computed for each dose at the end of each stage and directly affects the dose-specific randomization ratios in the next stage. Note that a negative value of the threshold is required in this case since a reduction in the MADRS total score indicates beneficial effect.
 
 The last parameter related to the adaptive randomization procedure is the balance parameter. This parameter controls the degree of balance for patient allocation in the next cohort. If a smaller value is chosen, the patient allocation across the dosing arms is more likely to be balanced and, with a larger value of this parameter, the allocation will be increasingly imbalanced. In this case study, the balance parameter will be set to 2 to assign most of the patients to the most promising doses:
 
@@ -151,7 +151,7 @@ GenerateReport(results,
                "CaseStudyF1.docx")
 ```
 
-This function will generate a Word-based simulation report with the specified file name and save it in the working directory. The report includes a summary of the trial parameters as well as the adaptive design's key operating characteristics such as a sample size summary by trial arm and a probability of success summary.
+This function will generate a Word-based simulation report with the specified file name and save it in the working directory. The report includes a summary of the trial parameters as well as the adaptive design's key operating characteristics such as a sample size summary by trial arm and a probability of success summary based on the significance of the dose-response relationship.
 
 ## Code and simulation report
 
