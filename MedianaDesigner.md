@@ -6,7 +6,7 @@ group:
 
 # Online manual
 
-This package supports efficient simulation-based power and sample size calculations for a broad class of late-stage clinical trials, including Phase II trials, seamless Phase II/III trials and Phase II/III trials. 
+This package supports efficient simulation-based power and sample size calculations for a broad class of late-stage clinical trials, including Phase II trials, seamless Phase II/III trials and Phase III trials. 
 
 The following modules are currently included in the package:
 
@@ -16,6 +16,7 @@ The following modules are currently included in the package:
 * Module D: Optimal selection of a futility stopping rule.
 * Module E: Event prediction in event-driven trials.
 * Module F: Adaptive trials with response-adaptive randomization (experimental module).
+* Module G: Traditional trials with multiple objectives (experimental module).
 
 # Development version
 
@@ -35,6 +36,7 @@ The technical manuals with a detailed description of the statistical methodology
 * [Optimal selection of a futility stopping rule](http://www.mediana.us/MedianaDesigner/FutRule.pdf).
 * [Event prediction in event-driven trials](http://www.mediana.us/MedianaDesigner/EventPred.pdf).
 * [Adaptive trials with response-adaptive randomization](http://www.mediana.us/MedianaDesigner/ADRand.pdf).
+* [Traditional trials with multiple objectives](http://www.mediana.us/MedianaDesigner/MultAdj.pdf).
 
 # Case studies
 
@@ -49,19 +51,19 @@ The following case studies illustrate the process of designing Phase III trials 
 
 ## Module B: Adaptive trials with data-driven treatment selection 
 
-The following case studies illustrate the process of designing Phase III trials with data-driven treatment selection using the `ADTreatSel` function:
+The following case study illustrates the process of designing Phase III trials with data-driven treatment selection using the `ADTreatSel` function:
 
 * [Case study B1](https://medianasoft.github.io/CaseStudyB1).
 
 ## Module C: Adaptive trials with data-driven population selection 
 
-The following case studies illustrate the process of designing Phase III trials with data-driven population selection using the `ADPopSel` function:
+The following case study illustrates the process of designing Phase III trials with data-driven population selection using the `ADPopSel` function:
 
 * [Case study C1](https://medianasoft.github.io/CaseStudyC1).
 
 ## Module D: Optimal selection of a futility stopping rule 
 
-The following case studies demonstrate how to set up optimal futility stopping rules using the `FutRule` function:
+The following case study demonstrates how to set up optimal futility stopping rules using the `FutRule` function:
 
 * [Case study D1](https://medianasoft.github.io/CaseStudyD1).
 
@@ -77,4 +79,10 @@ The following case study illustrates the process of designing a dose-finding Pha
 
 * [Case study F1](https://medianasoft.github.io/CaseStudyF1).
 
+## Module G: Traditional trials with multiple objectives
 
+The following case studies illustrate power calculations in Phase III trials with multiple dose-control comparisons and multiple endpoints using the `MultAdj` function:
+
+* [Case study G1](https://medianasoft.github.io/CaseStudyG1).
+* [Case study G2](https://medianasoft.github.io/CaseStudyG2).
+* [Case study G3](https://medianasoft.github.io/CaseStudyG3).
