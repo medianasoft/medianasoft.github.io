@@ -26,8 +26,8 @@ The same general setting will be assumed in this case study. The dose levels of 
 
 The null hypotheses are naturally grouped into two families based on the underlying endpoint:
 
-Family 1 (primary family): Hypotheses H1, H2 and H3.
-Family 2 (secondary family): Hypotheses H4, H5 and H6.
+* Family 1 (primary family): Hypotheses H1, H2 and H3.
+* Family 2 (secondary family): Hypotheses H4, H5 and H6.
 
 The families will be tested sequentially beginning with the primary family. The hypotheses in the primary family impose logical restrictions on the secondary hypotheses in the sense that a comparison between a dose and placebo on the key secondary endpoint will be carried out only if a significant treatment effect is established at the same dose in the primary family. This implies that the secondary hypothesis H4 can be tested only if the corresponding primary hypothesis H1 is rejected, otherwise this secondary hypothesis is accepted without testing.
 
