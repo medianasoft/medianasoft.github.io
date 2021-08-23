@@ -26,6 +26,10 @@ As noted on the main page, the latest stable version of the package can be downl
 devtools::install_github("medianasoft/MedianaDesigner")
 ```
 
+## Feedback
+
+Please let us know if you have questions about the R package or underlying methodology. You can contact us at info at mediana.us.  In addition, you could submit questions, issues or feature requests on the [issues page](https://github.com/medianasoft/MedianaDesigner/issues).
+
 # Technical manuals
 
 The technical manuals with a detailed description of the statistical methodology implemented in each module can also be found on Mediana's web site: 
