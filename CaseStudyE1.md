@@ -4,7 +4,7 @@ title: MedianaDesigner
 group: 
 ---
 
-# Event prediction in event-driven trials (Case study E1)
+# Blinded event prediction in event-driven trials (Case study E1)
 
 ## Phase III trial and `EventPred` function
 

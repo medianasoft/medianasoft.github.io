@@ -14,7 +14,7 @@ The following modules are currently included in the package:
 * Module B: Adaptive trials with data-driven treatment selection.
 * Module C: Adaptive trials with data-driven population selection.
 * Module D: Optimal selection of a futility stopping rule.
-* Module E: Event prediction in event-driven trials.
+* Module E: Blinded event prediction in event-driven trials.
 * Module F: Adaptive trials with response-adaptive randomization (experimental module).
 * Module G: Traditional trials with multiple objectives (experimental module).
 
@@ -38,7 +38,7 @@ The technical manuals with a detailed description of the statistical methodology
 * [Adaptive trials with data-driven treatment selection](http://www.mediana.us/MedianaDesigner/ADTreatSel.pdf).
 * [Adaptive trials with data-driven population selection](http://www.mediana.us/MedianaDesigner/ADPopSel.pdf).
 * [Optimal selection of a futility stopping rule](http://www.mediana.us/MedianaDesigner/FutRule.pdf).
-* [Event prediction in event-driven trials](http://www.mediana.us/MedianaDesigner/EventPred.pdf).
+* [Blinded event prediction in event-driven trials](http://www.mediana.us/MedianaDesigner/EventPred.pdf).
 * [Adaptive trials with response-adaptive randomization](http://www.mediana.us/MedianaDesigner/ADRand.pdf).
 * [Traditional trials with multiple objectives](http://www.mediana.us/MedianaDesigner/MultAdj.pdf).
 
@@ -71,7 +71,7 @@ The following case study demonstrates how to set up optimal futility stopping ru
 
 * [Case study D1](https://medianasoft.github.io/CaseStudyD1).
 
-## Module E: Event prediction in event-driven trials 
+## Module E: Blinded event prediction in event-driven trials 
 
 The following case study provides an illustration for the `EventPred` function:
 
