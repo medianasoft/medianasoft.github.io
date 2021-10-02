@@ -78,13 +78,25 @@ parameters$futility_threshold = 0.3
 
 This threshold corresponds to a fairly liberal stopping rule in the sense that the individual regimens are likely to be dropped due to lack of efficacy unless the treatment effect is rather strong, specifically unless conditional power is over 30%. The trial will be terminated at this decision point if all regimens are simultaneously dropped.
 
-The treatment selection rule at Interim analysis 2 focuses on the regimen with the largest observed effect size. Due to the discrete nature of the primary endpoint, there is a non-trivial chance that the same effect size could be observed in multiple regimen arms. In this case, the regimen with the lowest overall dose will be chosen.
-
 A fairly high patient dropout rate of 15% is assumed due to a longer duration of the trial:
 
 ``` r
 parameters$dropout_rate = 0.15
 ``` 
+
+The next two parameters define the treatment selection rule that will be applied at Interim analysis 2. First of all, the single best treatment corresponding to the largest observed effect size will be chosen at this decision point: 
+
+``` r
+parameters$treatment_count = 1
+```
+
+It is worth noting that, due to the discrete nature of the primary endpoint, there is a non-trivial chance that the same effect size could be observed in multiple regimen arms. In this case, the regimen with the lowest overall dose will be chosen.
+
+Since data-driven treatment selection induces multiplicity, a multiplicity adjustment (multiple testing  procedure) needs to be prospectively defined. The Hochberg procedure will be used in the trial:
+
+``` r
+parameters$mult_test = "Hochberg"
+```
 
 The one-sided Type I error rate in this Phase III trial is equal to 2.5%:
 
@@ -113,7 +125,7 @@ GenerateReport(results,
 
 This report will be saved in the working directory. 
 
-The following summaries are included in the simulation report. The probability of dropping each regimen and an overall probability of terminating the trial due to futility (if all regimens are simultaneously ineffective) at Interim analysis 1 are displayed in Table 7. Table 8 presents the probabilities of treatment selection at Interim analysis 2, i.e., the probability that each regimen is selected as the best performing regimen for the final analysis. Tables 9 and 10 compare the probability of success in the proposed adaptive trial to that of reference trials (traditional trials). In the context of adaptive treatment selection, it is natural to define multiple reference trials. Each reference trial assumes a simple two-arm design where each individual regimen is compared with placebo with a futility assessment at a single interim look. 
+The following summaries are included in the simulation report. The probability of dropping each regimen and an overall probability of terminating the trial due to futility (if all regimens are simultaneously ineffective) at Interim analysis 1 are displayed in Table 7. Table 8 presents the probabilities of treatment selection at Interim analysis 2, i.e., the probability that each regimen is selected for the final analysis. Tables 9 and 10 compare the probability of success in the proposed adaptive trial to that of reference trials (traditional trials). In the context of adaptive treatment selection, it is natural to define multiple reference trials. Each reference trial assumes a simple two-arm design where each individual regimen is compared with placebo with a futility assessment at a single interim look. 
 
 ## Code and simulation report
 
