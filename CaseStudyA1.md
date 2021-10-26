@@ -124,6 +124,14 @@ The adaptive design's characteristics will be evaluated via simulations based on
 parameters$nsims = 10000
 ```
 
+The user can define the seed for the random number generation algorithm to achieve reproducibility, e.g., 
+
+``` r
+parameters$random_seed = 20213
+```
+
+However, this parameter is optional and the default value (49283) will be used if no seed is specified.
+
 The resulting parameter list is ready to be passed to the `ADSSMod` function. The function will run simulations and save the results in the `results` object:
 
 ``` r

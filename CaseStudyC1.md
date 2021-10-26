@@ -141,6 +141,14 @@ and 10,000 simulations will be run to compute the trial's operating characterist
 parameters$nsims = 10000
 ```
 
+The user can also define the seed for the random number generation algorithm to achieve reproducibility, e.g., 
+
+``` r
+parameters$random_seed = 20213
+```
+
+However, this parameter is optional and the default value (49283) will be used if no seed is specified.
+
 Operating characteristics of the adaptive population-selection design with the parameters listed above are evaluated by calling the `ADPopSel` function:
 
 ``` r

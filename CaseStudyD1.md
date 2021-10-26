@@ -87,7 +87,15 @@ The simulation-based algorithm for computing an optimal threshold for conditiona
 parameters$nsims = 10000
 ```
 
-To run the calculations, the list of trial parameters is passed to the `FutRule` function:
+The user can also define the seed for the random number generation algorithm to achieve reproducibility, e.g., 
+
+``` r
+parameters$random_seed = 20213
+```
+
+However, this parameter is optional and the default value (49283) will be used if no seed is specified.
+
+Finally, to run the calculations, the list of trial parameters is passed to the `FutRule` function:
 
 ``` r
 results = FutRule(parameters)

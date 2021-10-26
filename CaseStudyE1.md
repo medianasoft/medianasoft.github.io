@@ -93,6 +93,14 @@ The event predictions will be run using 1,000 simulation runs:
 parameters$nsims = 1000
 ```
 
+The user can also define the seed for the random number generation algorithm to achieve reproducibility, e.g., 
+
+``` r
+parameters$random_seed = 20213
+```
+
+However, this parameter is optional and the default value (49283) will be used if no seed is specified.
+
 The last step is to call the `EventPred` function to predict the average number of events and compute the predictive intervals at 12, 13, ..., 24 months:
 
 ``` r

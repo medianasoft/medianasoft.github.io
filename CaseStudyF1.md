@@ -136,6 +136,14 @@ Key operating characteristics of the adaptive and traditional designs will be es
 parameters$nsims = 1000
 ```
 
+The user can also define the seed for the random number generation algorithm to achieve reproducibility, e.g., 
+
+``` r
+parameters$random_seed = 20213
+```
+
+However, this parameter is optional and the default value (49283) will be used if no seed is specified.
+
 The resulting list of parameters (`parameters`) will be passed to the `ADRand` function to compute the operating characteristics:
 
 ``` r

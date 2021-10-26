@@ -100,7 +100,15 @@ Power calculations will be run using 10,000 simulation runs:
 parameters$nsims = 10000
 ```
 
-The resulting parameter list will be passed to the `MultAdj` function and the simulation results will be saved in the `results` object:
+The user can also define the seed for the random number generation algorithm to achieve reproducibility, e.g., 
+
+``` r
+parameters$random_seed = 20213
+```
+
+However, this parameter is optional and the default value (49283) will be used if no seed is specified.
+
+The resulting list of parameters will be passed to the `MultAdj` function and the simulation results will be saved in the `results` object:
 
 ``` r
 results = MultAdj(parameters)
