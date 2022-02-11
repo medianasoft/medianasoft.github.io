@@ -5,7 +5,6 @@ subtitle: Open-source software for designing clinical trials
 published: true
 ---
 
-
 # About the company
 
 [Mediana LLC](http://www.mediana.us) provides biostatistical consulting services and develops software tools to implement innovative trial designs and advanced statistical methods for clinical trials.
@@ -28,4 +27,10 @@ This package provides an efficient implementation of the MCPMod (Multiple Compar
 
 The latest production version of the package is available on [CRAN](https://cran.r-project.org/web/packages/MCPModPack/index.html).  The latest development version can be found on [Github](https://github.com/medianasoft/MCPModPack).
 
+# Online training programs
 
+Online training programs on key topics in clinical trial statistics and clinical trial simulation can be found on [Mediana's YouTube channel] (https://www.youtube.com/channel/UCAQUAsQxxnzje4rEdJ4870Q). 
+
+The web pages for the individual training courses:
+
+* [Adaptive designs and clinical trial simulation](https://medianasoft.github.io/AdaptiveDesignTraining).
