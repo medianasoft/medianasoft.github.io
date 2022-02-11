@@ -29,7 +29,7 @@ The latest production version of the package is available on [CRAN](https://cran
 
 # Online training programs
 
-Online training programs on key topics in clinical trial statistics and clinical trial simulation can be found on [Mediana's YouTube channel] (https://www.youtube.com/channel/UCAQUAsQxxnzje4rEdJ4870Q). 
+Online training programs on key topics in clinical trial statistics and clinical trial simulation can be found on [Mediana's YouTube channel](https://www.youtube.com/channel/UCAQUAsQxxnzje4rEdJ4870Q). 
 
 The web pages for the individual training courses:
 

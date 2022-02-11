@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Online training program
+title: Online training
 group: 
 ---
 
@@ -19,7 +19,7 @@ A 10-part online training course on adaptive designs and clinical trial simulati
 * Part 9: Adaptive designs with population selection in Phase III trials (Methodology and examples).
 * Part 10: Adaptive designs with population selection in Phase III trials (Case study and software).
 
-# Clinical trial simulation software
+## Clinical trial simulation software
 
 The R package (MedianaDesigner) is used throughout this training course to illustrate the process of designing adaptive Phase II and Phase III trials.  
 
@@ -27,7 +27,9 @@ For more information on this package, visit [Mediana's web site](http://www.medi
 
 The latest stable version of the package can be downloaded from [CRAN](https://cran.r-project.org/web/packages/MedianaDesigner/index.html). 
 
-# References
+## References
+
+Papers, book chapters and books used in the training course:
 
 * Barnes, P.J., et al. (2010). Integrating indacaterol dose selection in a clinical study in COPD using an adaptive seamless design. Pulmonary Pharmacology and Therapeutics. 23, 165-171.
 * Bauer, P., Kohne, K. (1994). Evaluation of experiments with adaptive interim analyses. Biometrics. 50, 1029-1041.
