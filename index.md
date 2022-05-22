@@ -25,7 +25,7 @@ For more information on this package, visit [Mediana's web site](http://www.medi
 
 This package provides an efficient implementation of the MCPMod (Multiple Comparisons and Modeling) method to support a simulation-based design and analysis of dose-finding trials with normally distributed, binary and count endpoints.
 
-The latest production version of the package is available on [CRAN](https://cran.r-project.org/web/packages/MCPModPack/index.html).  The latest development version can be found on [Github](https://github.com/medianasoft/MCPModPack).
+The latest production version of the package is available on [CRAN](https://cran.r-project.org/web/packages/MCPModPack/index.html).  The latest development version can be found on [Github](https://github.com/medianainc/MCPModPack).
 
 # Online training programs
 
@@ -34,3 +34,6 @@ Online training programs on key topics in clinical trial statistics and clinical
 The web pages for the individual training courses:
 
 * [Adaptive designs and clinical trial simulation](https://medianasoft.github.io/AdaptiveDesignTraining).
+* [Key Multiplicity Issues in Clinical Trials (Part I)](https://medianasoft.github.io/MultiplicityTrainingPartI).
+
+
