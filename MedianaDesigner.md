@@ -17,6 +17,7 @@ The following modules are currently included in the package:
 * Module E: Blinded event prediction in event-driven trials.
 * Module F: Adaptive trials with response-adaptive randomization (experimental module).
 * Module G: Traditional trials with multiple objectives (experimental module).
+* Module H: Traditional trials with cluster-randomized designs.
 
 # Development version
 
@@ -41,6 +42,7 @@ The technical manuals with a detailed description of the statistical methodology
 * [Blinded event prediction in event-driven trials](http://www.mediana.us/MedianaDesigner/EventPred.pdf).
 * [Adaptive trials with response-adaptive randomization](http://www.mediana.us/MedianaDesigner/ADRand.pdf).
 * [Traditional trials with multiple objectives](http://www.mediana.us/MedianaDesigner/MultAdj.pdf).
+* [Traditional trials with with cluster-randomized designs](http://www.mediana.us/MedianaDesigner/ClustRand.pdf).
 
 # Case studies
 
@@ -90,3 +92,9 @@ The following case studies illustrate power calculations in Phase III trials wit
 * [Case study G1](https://medianasoft.github.io/CaseStudyG1).
 * [Case study G2](https://medianasoft.github.io/CaseStudyG2).
 * [Case study G3](https://medianasoft.github.io/CaseStudyG3).
+
+## Module H: Traditional trials with cluster-randomized designs
+
+The following case study illustrates the process of designing studies with cluster-randomized designs using the `ClustRand` function:
+
+* [Case study H1](https://medianasoft.github.io/CaseStudyH1).
