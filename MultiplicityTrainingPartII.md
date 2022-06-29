@@ -6,7 +6,7 @@ group:
 
 # Key Multiplicity Issues in Clinical Trials (Part II)
 
-An 8-part online training course on traditional multiplicity problems in clinical trials:
+An 8-part online training course on advanced multiplicity problems in clinical trials:
 
 * Introduction.
 * Module A. Clinical trial examples (Phase III trials with multiple sources of multiplicity).
