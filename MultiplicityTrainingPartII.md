@@ -4,17 +4,17 @@ title: Online training
 group: 
 ---
 
-# Key Multiplicity Issues in Clinical Trials (Part I)
+# Key Multiplicity Issues in Clinical Trials (Part II)
 
 An 8-part online training course on traditional multiplicity problems in clinical trials:
 
 * Introduction.
-* Module A. Clinical trial examples (Phase III trials with multiple primary and co-primary endpoints, multiple dose-control comparisons, multiple patient populations). 
-* Module B. Key concepts: Inferential goals (at-least-one, all-or-none and global procedures), Error rate definitions, Classification of multiple testing procedures (single-step and stepwise procedures, nonparametric, semiparametric and parametric procedures). 
-* Module C. Nonparametric and semiparametric multiple testing procedures I: Data-driven hypothesis ordering (Bonferroni, Holm, Hochberg and Hommel procedures). 
-* Module D. Nonparametric multiple testing procedures II: Pre-specified hypothesis ordering (fixed-sequence, fallback and chain/graphical procedures). 
-* Module E. Parametric multiple testing procedures (regular Dunnett and step-down Dunnett procedures). 
-* Module F. Simultaneous confidence intervals for commonly used multiple testing procedures (single-step and stepwise procedures). 
+* Module A. Clinical trial examples (Phase III trials with multiple sources of multiplicity).
+* Module B. Introduction to gatekeeping strategies (General regulatory considerations, Classification of gatekeeping strategies, Analysis of secondary endpoints).
+* Module C. Parallel gatekeeping strategies (Simple strategies based on nonparametric procedures, More powerful strategies based on semiparametric procedures in a parallel gatekeeping setting).
+* Module D. General gatekeeping strategies (Gatekeeping strategies based on semiparametric procedures in multiplicity problems with general gatekeepers).
+* Module E. Group-sequential trials with multiple objectives (Introduction to group-sequential trials, Group-sequential trials with multiple endpoints).
+* Module F. General adaptive trials with multiple objectives (Decision rules in adaptive designs, Adaptive population selection trials).
 * Module G. Power calculations in clinical trials with multiple objectives.
 
 ## Clinical trial simulation software

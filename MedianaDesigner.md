@@ -17,7 +17,7 @@ The following modules are currently included in the package:
 * Module E: Blinded event prediction in event-driven trials.
 * Module F: Adaptive trials with response-adaptive randomization (experimental module).
 * Module G: Traditional trials with multiple objectives (experimental module).
-* Module H: Traditional trials with cluster-randomized designs.
+* Module H: Traditional trials with cluster-randomized designs (experimental module).
 
 # Development version
 

@@ -35,5 +35,6 @@ The web pages for the individual training courses:
 
 * [Adaptive designs and clinical trial simulation](https://medianasoft.github.io/AdaptiveDesignTraining).
 * [Key Multiplicity Issues in Clinical Trials (Part I)](https://medianasoft.github.io/MultiplicityTrainingPartI).
+* [Key Multiplicity Issues in Clinical Trials (Part II)](https://medianasoft.github.io/MultiplicityTrainingPartII).
 
 
