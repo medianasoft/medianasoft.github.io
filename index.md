@@ -19,7 +19,9 @@ This package supports efficient simulation-based power and sample size calculati
 
 The latest stable version of the package can be downloaded from [CRAN](https://cran.r-project.org/web/packages/MedianaDesigner/index.html) and the latest development version can be found on [Github](https://github.com/medianasoft/MedianaDesigner). 
 
-For more information on this package, visit [Mediana's web site](http://www.mediana.us/free-software) and review the [online manual](https://medianasoft.github.io/MedianaDesigner). 
+For more information on this package, visit [Mediana's web site](http://www.mediana.us/free-software) and review the online manuals:
+* [Online manual](https://medianasoft.github.io/MedianaDesigner) (English).
+* [Online manual](https://medianasoft.github.io/MedianaDesignerFrench) (French). 
 
 # MCPModPack (R package)
 
