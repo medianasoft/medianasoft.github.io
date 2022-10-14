@@ -16,7 +16,7 @@ Plusieurs hypothèses simplificatrices sont formulées dans l’étude de cas, p
 
 Le code présenté ci-dessous illustre l’utilisation de la fonction ClustRand pour évaluer la probabilité de succès de l’étude et identifier le nombre nécessaire de sujets qui terminent l’étude pour atteindre une puissance de 80 % avec un niveau de signification bilatéral standard de 5% (ou, de manière équivalente, un niveau de signification unilatéral de 2.5%).
 
-Pour plus d’informations sur la méthodologie statistique utilisée dans cette fonction, téléchargez le [manuel technique] (http://www.mediana.us/MedianaDesigner/ClustRandFrench.pdf).
+Pour plus d’informations sur la méthodologie statistique utilisée dans cette fonction, téléchargez le [manuel technique](http://www.mediana.us/MedianaDesigner/ClustRandFrench.pdf).
 
 ## Calculs de puissance à l’aide de la fonction `ClustRand`
 
