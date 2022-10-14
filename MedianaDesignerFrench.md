@@ -17,6 +17,7 @@ Les modules suivants sont actuellement inclus dans le paquet :
 * Module E : Prédiction d’événements en aveugle dans les essais basés sur les évènements.
 * Module F : Essais adaptatifs avec randomisation adaptative à la réponse (module expérimental).
 * Module G : Essais traditionnels avec des objectifs multiples (module expérimental).
+* Module H : Essais traditionnels avec des designs randomisés par grappes (module expérimental).
 
 # Version en développement
 
@@ -41,6 +42,7 @@ Les manuels techniques avec une description détaillée de la méthodologie stat
 * [Prédiction d’événements en aveugle dans les essais basés sur les évènements](http://www.mediana.us/MedianaDesigner/EventPredFrench.pdf).
 * [Essais adaptatifs avec randomisation adaptative à la réponse](http://www.mediana.us/MedianaDesigner/ADRandFrench.pdf).
 * [Essais traditionnels avec des objectifs multiples](http://www.mediana.us/MedianaDesigner/MultAdjFrench.pdf).
+* [Essais traditionnels avec des designs randomisés par grappes](http://www.mediana.us/MedianaDesigner/ClustRandFrench.pdf).
 
 # Étude de cas
 
@@ -90,3 +92,9 @@ Les études de cas suivantes illustrent les calculs de puissance dans les essais
 * [Étude de cas G1](https://medianasoft.github.io/CaseStudyG1French).
 * [Étude de cas G2](https://medianasoft.github.io/CaseStudyG2French).
 * [Étude de cas G3](https://medianasoft.github.io/CaseStudyG3French).
+
+##  Module H : Essais traditionnels avec des designs par grappes
+
+L’étude de cas suivante illustre le processus de conception d’études avec des designs randomisés par grappes à l’aide de la fonction ClustRand :
+
+* [Étude de cas H1](https://medianasoft.github.io/CaseStudyH1French).
